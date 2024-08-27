@@ -60,7 +60,7 @@ export default function Footer() {
   })
   const onSubmit = (data) => {
     setDisabledForm(true)
-    Axios.get(`https://maminaudio.com/api/wp-json/my/v1/newsletter/1?email=${data.email}`).then(res=>{
+    Axios.get(`https://api.maminaudio.com/wp-json/my/v1/newsletter/1?email=${data.email}`).then(res=>{
       console.log(JSON.parse(res.data).message)
       childRef.current.getAlert(JSON.parse(res.data).message)
     }).catch(()=>{

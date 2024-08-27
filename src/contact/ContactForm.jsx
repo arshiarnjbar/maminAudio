@@ -43,7 +43,7 @@ const ContactForm = () => {
     // const [formDatas, setFormDatas] = useState({ name: "", email: '' })
     const handleSubmiter = (data) => {
         Axios
-            .post("https://maminaudio.com/api/wp-json/my/v1/formHandler/1", {
+            .post("https://api.maminaudio.com/wp-json/my/v1/formHandler/1", {
                 data,
             },
                 { headers: { 'Accept': 'application/json' } })

@@ -33,7 +33,7 @@ export default function Features() {
 
   const getPosts = ()=>{
     setLoading(true)
-    const urlemoon = `https://maminaudio.com/api/wp-json/my/v1/crte/1?tags=${activeCategory}`
+    const urlemoon = `https://api.maminaudio.com/wp-json/my/v1/crte/1?tags=${activeCategory}`
     console.log(urlemoon)
     Axios.get(urlemoon).then(res => {
       setCatFact(res.data)
