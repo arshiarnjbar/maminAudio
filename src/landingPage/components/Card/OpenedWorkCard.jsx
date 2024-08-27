@@ -84,7 +84,7 @@ const OpenedWorkCard = ({ data, index, setSelectedWork }) => {
                             }}
                         >
                             <iframe
-                             src={`https://maminaudio.com/test/test.php?videoID=${data.video}`}
+                             src={`https://video.maminaudio.com/?videoID=${data.video}`}
                              frameborder="0"
                              style={{
                                 maxHeight: "calc(90vh - 32px)",
